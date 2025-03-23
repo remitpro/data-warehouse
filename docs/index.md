@@ -12,7 +12,7 @@ This report details the implementation of a data warehouse with data marts using
 ## Project Workflow
 
 The implementation follows these key stages:
--  High-Level Dimensional Model
+- High-Level Dimensional Model
 - Detailed Dimensional Model
 - Database Setup in SQL Server
 - Setting Up DBT Development Environment

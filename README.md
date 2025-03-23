@@ -1,66 +1,98 @@
-# Data Warehouse POC
+# Implementation of a Data Warehouse with Data Marts Using DBT and SQL Server
 ***
 
-### Overview
-The Data Warehouse POC project demonstrates how to orchestrate data warehouse transformations using dbt while ensuring data quality and observability. The project also includes a documentation pipeline and dashboard publication using MkDocs and Elementary.
+### Introduction
+This report details the implementation of a data warehouse with data marts using SQL Server and DBT (Data Build Tool) while leveraging GitHub for version control. The project follows a structured approach, including high-level and detailed dimensional modeling, database setup, DBT configuration, implementation, and documentation hosting via GitHub Pages.
 
-### Features
-- Data Transformation with dbt: Implements dbt (Data Build Tool) for transforming and managing data pipelines efficiently.
-- Documentation with dbt Docs: Generates and publishes documentation for data models using dbt docs.
-Static Site with MkDocs: Hosts the generated documentation using MkDocs, making it accessible as a static website.
-- Data Quality with Elementary: Integrates Elementary to monitor and enforce data quality rules.
-- Dashboard Publication: Publishes Elementary dashboards in MkDocs for visibility into data pipeline health.
-
-### Technology Stack
-- dbt (Data Build Tool) – For data transformation and modeling.
-- dbt Docs – For automatic documentation of dbt models.
-- MkDocs – To host the documentation as a static site.
-- Elementary – For data quality checks and monitoring.
-
-### Installation & Setup
-- Clone the Repository
-
-    ```
-    git clone https://github.com/remitpro/data-warehouse-poc.git
-    cd data-warehouse-poc
-
-    ```
+<a href="./docs/dbtpipeline/index.html"  target="_blank"> Data Build Tool Dashboard   </a>
 
 
-- Install Dependencies
-Ensure you have dbt and MkDocs installed. You can install them using:
+## Project Workflow
 
-    ```
-    pip install dbt-core dbt-postgres mkdocs mkdocs-material elementary-data
+The implementation follows these key stages:
+###  High-Level Dimensional Model
 
-    ```
+The initial step involves designing a high-level dimensional model to represent the business data requirements. The process includes:
 
-- Initialize dbt
-Run the following commands to set up the dbt environment:
+Identifying key business processes.
 
-    ```
-    dbt deps  # Install dependencies
-    dbt seed  # Load seed data
-    dbt run   # Execute transformations
-    dbt test  # Run tests
+Defining fact and dimension tables.
 
-    ```
+Establishing relationships between entities.
 
-- Generate and Serve Documentation
+Creating a star or snowflake schema as appropriate.
 
-    ```
-    dbt docs generate
-    mkdocs serve
+![](./docs/dwworksheet/BusMatrx.png)
 
-    ```
 
-Access the documentation at: http://localhost:8000
+###  Detailed Dimensional Model
 
-- Run Elementary for Data Quality Monitoring
-    ```
-    elementary monitor run
+Building on the high-level model, a detailed dimensional model is developed. This includes:
 
-    ```
+Defining attributes and keys for each table.
 
-### License
-This project is licensed under the MIT License.
+Specifying granularity levels for fact tables.
+
+Ensuring normalization or denormalization based on performance requirements.
+
+![](./docs/dwworksheet/Screenshot%202025-03-22%20125042.png)
+
+
+
+### Database Setup in SQL Server
+
+A database is created in SQL Server to store the data warehouse and data marts. This involves:
+
+Setting up the SQL Server instance.
+
+Creating schemas for data marts.
+
+Implementing tables based on the dimensional model.
+
+Establishing indexes and constraints for optimization.
+
+### Setting Up DBT Development Environment
+
+DBT is used to manage transformations and ensure data quality. The setup process includes:
+
+Installing DBT and configuring it to work with SQL Server.
+
+Defining a DBT project structure.
+
+Connecting DBT to the SQL Server database.
+
+Version-controlling the project using GitHub.
+
+
+### Implementation of Dimensional Model with DBT
+
+The dimensional model is implemented using DBT by:
+
+Creating DBT models for fact and dimension tables.
+
+Writing SQL transformations to populate tables.
+
+Implementing tests and validations to ensure data integrity.
+
+Using DBT macros for reusable logic.
+
+![](./docs/dwworksheet/salesModel.png)
+
+
+### Generating and Hosting DBT Documentation
+
+To ensure transparency and maintainability, DBT documentation is generated and hosted as a static site using GitHub Pages. The steps include:
+
+Running dbt docs generate to create documentation.
+
+Using dbt docs serve to preview documentation locally.
+
+Committing the documentation files to a GitHub repository.
+
+Configuring GitHub Pages to serve the documentation as a static site.
+
+
+
+## Conclusion
+
+The implementation of a data warehouse with data marts using SQL Server, DBT, and GitHub provides a structured and efficient approach to managing business intelligence workflows. The integration of version control ensures collaboration and traceability, while hosting documentation on GitHub Pages enhances accessibility. This approach facilitates efficient data management, transformation, and reporting for business decision-making.
