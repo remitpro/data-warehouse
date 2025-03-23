@@ -32,27 +32,29 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   data_warehouse_dbt:
     # Config indicated by + and applies to all files under models/example/
-    jaffle_shop:
-      materialized: table
-      +schema: demo
     staging:
         materialized: view
-        +schema: demo
+        +schema: staging 
+    northwind:
+      +schema: northwind
 
   ## see docs: https://docs.elementary-data.com/
   elementary:
     ## elementary models will be created in the schema '<your_schema>_elementary'
-    +schema: "elementary"
+    +schema: elementary
+    database: Elementary
     ## To disable elementary for dev, uncomment this:
     # enabled: "{{ target.name in ['prod','analytics'] }}"
     
+flags:
+  require_explicit_package_overrides_for_builtin_materializations: False
+  source_freshness_run_project_hooks: True
 
-  
 
 # Configuring seeds
 # Full documentation: https://docs.getdbt.com/docs/configuring-seeds
 seeds:
   data_warehouse_dbt:
-    +schema: demo
+    +schema: staging 
 
 

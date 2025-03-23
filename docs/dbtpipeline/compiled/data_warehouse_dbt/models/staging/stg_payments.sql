@@ -1,4 +1,5 @@
 with source as (
+    
     select * from "remitpro"."demo"."raw_payments"
 
 ),

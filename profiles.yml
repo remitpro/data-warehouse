@@ -6,7 +6,7 @@ data_warehouse_dbt:
       driver: 'ODBC Driver 18 for SQL Server' # (The ODBC Driver installed on your system)
       server: remitpro
       port: 1433
-      database: remitpro
+      database: DBNRemitproDemo
       schema: dev
       windows_login: True
       TrustServerCertificate: True
@@ -20,7 +20,7 @@ elementary:
       driver: 'ODBC Driver 18 for SQL Server' # (The ODBC Driver installed on your system)
       server: remitpro
       port: 1433
-      database: remitpro
+      database: DBNRemitproDemo
       schema: dev
       windows_login: True
       TrustServerCertificate: True

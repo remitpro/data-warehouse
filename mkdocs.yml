@@ -23,24 +23,12 @@ theme:
 
 nav:
   - Introduction: index.md
-  - Data Warehouse:
-    - Overview: data-warehouse.md
-    - Data Model: data-model.md
-    - Data Ingestion: data-ingestion.md
-    - Data Transformation: data-transformation.md
-    - Data Loading: data-loading.md
-  - dbt:
-    - Overview: dbt.md
-    - Installation: dbt-installation.md
-    - Configuration: dbt-configuration.md
-    - Models: dbt-models.md
-    - Tests: dbt-tests.md
-    - Documentation: dbt-documentation.md
-  - Data Quality:
-    - Overview: data-quality.md
-    - Data Quality Checks: data-quality-checks.md
-    - Data Quality Metrics: data-quality-metrics.md
-
+  - High-Level Dimensional Model: highleveldimensionalmodel.md
+  - Detailed Dimensional Model: detaileddimensionalmodel.md
+  - Project Setup: developmentenv.md
+  - Implementation: implementation.md
+  - Conclusion: conclusion.md
+  
 
 
 copyright: Copyright &copy; 2025  Remitpro 

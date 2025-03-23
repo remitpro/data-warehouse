@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: northwind
+    database: Northwind
+    schema: dbo
+    loader: sqlserver
+    config:
+      enabled: true
+    tables:
+      - name: dbo.Categories
+      - name: dbo.CustomerCustomerDemo
+      - name: dbo.CustomerDemographics
+      - name: dbo.Customers
+      - name: dbo.DateDimension
+      - name: dbo.Employees
+      - name: dbo.EmployeeTerritories
+      - name: dbo.Orders
+      - name: dbo.Products
+      - name: dbo.Region
+      - name: dbo.Shippers
+      - name: dbo.Suppliers
+      - name: dbo.Territories

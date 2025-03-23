@@ -8,6 +8,7 @@ USE [remitpro];
     USE [remitpro];
     EXEC('
         create view "demo"."stg_orders__dbt_tmp" as with source as (
+
     select * from "remitpro"."demo"."raw_orders"
 
 ),
