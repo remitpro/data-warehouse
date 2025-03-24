@@ -1,12 +1,17 @@
 site_name: Data Warehouse 
 
 
+extra:
+  homepage: https://remitpro.io/
+
+
 repo_url: https://github.com/remitpro/data-warehouse-poc
 repo_name: remitpro/data-warehouse-poc
 edit_uri: edit/main/docs/
 
 theme:
   name: material
+  logo: assets/logo.png
 
   features:
     - content.action.edit
