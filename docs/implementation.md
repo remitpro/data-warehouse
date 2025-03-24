@@ -16,7 +16,9 @@ The dimensional model is implemented using DBT by:
 ![](./dwworksheet/salesModel.png)
 
 
-## Generating and Hosting DBT Documentation
+
+## <a href="./dbtpipeline/index.html"  target="_blank"> Generating and Hosting DBT Documentation   </a>
+
 
 To ensure transparency and maintainability, DBT documentation is generated and hosted as a static site using GitHub Pages. The steps include:
 
