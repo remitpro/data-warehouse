@@ -2,7 +2,10 @@
     config(
         materialized='incremental',
         unique_key='EmployeeKey',
-        check_cols=['EmployeeID']
+        check_cols=['EmployeeID'],
+        alias='dimemployee',
+        tags=['northwind', 'DimEmployee']
+    
     )
 }}
 

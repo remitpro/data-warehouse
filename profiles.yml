@@ -12,6 +12,7 @@ data_warehouse_dbt:
       TrustServerCertificate: True
 
 
+
 elementary:
   target: dev
   outputs:

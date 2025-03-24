@@ -1,4 +1,12 @@
-
+{{
+config(
+    materialized='incremental',
+    unique_key='OrderID',
+    sort='OrderID',
+    alias='factsales',
+    tags=['northwind', 'FactSales']
+)
+}}
 
 SELECT 
 
@@ -23,9 +31,9 @@ SELECT
 --DiscountAmount
 --SoldAmount
 
-prod.ProductKey,
-cus.CustomerKey,
-emp.EmployeeKey,
+prod.ProducID,
+cus.CustomerID,
+emp.EmployeeID,
 ord.OrderDate,
 ord.ShippedDate,
 ord.OrderID,
