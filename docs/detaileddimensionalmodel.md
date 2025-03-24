@@ -1,7 +1,7 @@
 
 
 
-##  Detailed Dimensional Model
+##  [Detailed Dimensional Model](./dwworksheet/Northwind-Detailed-Dimensional-Modeling-Workbook-KimballU.xlsm)
 
 Building on the high-level model, a detailed dimensional model is developed. This includes:
 

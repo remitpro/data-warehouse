@@ -1,6 +1,6 @@
 
 
-##  High-Level Dimensional Model
+##  [High-Level Dimensional Model](./dwworksheet/High_Level_Dimensional_Modeling_Workbook.xlsx)
 
 The initial step involves designing a high-level dimensional model to represent the business data requirements. The process includes:
 
