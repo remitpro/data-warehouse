@@ -1,3 +1,5 @@
+
+
 {{ config(
     materialized='incremental',
     unique_key='CustomerID',
@@ -18,10 +20,10 @@ Region as CustomerRegion,
 City as CustomerCity,
 PostalCode as CustomerPostalCode,
 'Y' as RowIsCurrent,
-GETDATE() as  RowStartDate,
+ingestion_timestamp as  RowStartDate,
 '12/31/9999' as RowEndDate,
 'Updated' as RowChangeReason
 
- FROM {{ ref('Customers') }}
+ FROM {{ ref('StgCustomers') }}
 
  WHERE CustomerID IS NOT NULL

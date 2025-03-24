@@ -1,0 +1,17 @@
+version: 2 
+sources:
+  - name: northwind
+    schema: seeds
+    tables: 
+      - name: Customers
+      - name: Categories
+      - name: Employees 
+      - name: EmployeeTerritories
+      - name: OrderDetails
+      - name: Orders
+      - name: Products
+      - name: Region
+      - name: Shippers
+      - name: Suppliers
+      - name: Territories
+      

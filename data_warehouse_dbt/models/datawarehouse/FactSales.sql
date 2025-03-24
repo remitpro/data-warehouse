@@ -1,3 +1,4 @@
+
 {{
 config(
     materialized='incremental',
@@ -20,17 +21,6 @@ LEFT JOIN Northwind.dbo.Products prod on prod.ProductID=ordd.ProductID
 
 SELECT 
 
---ProductKey
---CustomerKey
---EmployeeKey
---OrderDateKey
---ShippedDateKey
---OrderID
---Quantity
---ExtendedPriceAmount
---DiscountAmount
---SoldAmount
-
 prod.ProducID,
 cus.CustomerID,
 emp.EmployeeID,
@@ -44,8 +34,8 @@ ordd.Quantity * (1- ordd.Discount) * ordd.UnitPrice as SoldAmount
 
 
 
-FROM  {{ ref('Orders') }}  Ord
-LEFT JOIN {{ ref('Customers') }}  cus on cus.CustomerID=ord.CustomerID
-LEFT JOIN {{ ref('Employees') }}  emp on emp.EmployeeID=ord.EmployeeID
-LEFT JOIN {{ ref('OrderDetails') }}  ordd on ordd.OrderID=ord.OrderID
-LEFT JOIN {{ ref('Products') }} prod on prod.ProductID=ordd.ProductID
+FROM  {{ ref('StgOrders') }}  Ord
+LEFT JOIN {{ ref('StgCustomers') }}  cus on cus.CustomerID=ord.CustomerID
+LEFT JOIN {{ ref('StgEmployees') }}  emp on emp.EmployeeID=ord.EmployeeID
+LEFT JOIN {{ ref('StgOrderDetails') }}  ordd on ordd.OrderID=ord.OrderID
+LEFT JOIN {{ ref('StgProducts') }} prod on prod.ProductID=ordd.ProductID
