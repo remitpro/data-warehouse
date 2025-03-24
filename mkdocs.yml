@@ -11,7 +11,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  logo: assets/logo.png
+  logo: assets/logo2.png
 
   features:
     - content.action.edit
