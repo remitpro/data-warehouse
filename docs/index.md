@@ -26,6 +26,12 @@ The implementation follows these key stages:
 - Conclusion
 
 
+A modern data platform provides the foundation for seamless data integration, storage, processing, and analysis. In this post, I’ll explore why businesses need a strong data infrastructure, how platforms like the Semantix Data Platform address these needs, and how my expertise as a data warehouse and data engineering consultant can help organizations build scalable, efficient data ecosystems.
+
+![](./dwworksheet/datapipeline.gif)
+
+
+
 
 
 
