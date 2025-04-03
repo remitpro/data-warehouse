@@ -8,7 +8,7 @@ This report details the implementation of a data warehouse with data marts using
 
 ***
 
-<a href="./dbtpipeline/index.html"  target="_blank"> Data Build Tool Dashboard   </a>
+<a href="./dbtpipeline/target/index.html"  target="_blank"> Data Build Tool Dashboard   </a>
 
 *** 
 

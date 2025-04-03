@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "DBNRemitproDemo"."seed"."Shippers" ("ShipperID" int,"CompanyName" varchar(16),"Phone" varchar(16))
+  ;
+    -- dbt seed --
+    
+          insert into "DBNRemitproDemo"."seed"."Shippers" ("ShipperID", "CompanyName", "Phone") values
+          (?,?,?),(?,?,?),(?,?,?)
+      
+
+;
+  
