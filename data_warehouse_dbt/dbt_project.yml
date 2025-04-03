@@ -32,8 +32,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   data_warehouse_dbt:
     # Config indicated by + and applies to all files under models/example/
-    northwind:
-      +schema: northwind
+    staging:
+      +schema: staging
+    datawarehouse:
+      +schema: data_marts
+    
 
   ## see docs: https://docs.elementary-data.com/
   elementary:

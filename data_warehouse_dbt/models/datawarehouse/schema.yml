@@ -1,0 +1,23 @@
+version: 2
+
+models:
+    - name: DimCustomer
+      columns:              
+          - name: CustomerID
+            data_tests:
+                - not_null
+                - unique
+    - name: DimProduct
+      columns:              
+          - name: ProductID
+            data_tests:
+                - not_null
+                - unique
+
+    - name: DimEmployee
+      columns:              
+          - name: EmployeeID
+            data_tests:
+                - not_null
+                - unique
+        

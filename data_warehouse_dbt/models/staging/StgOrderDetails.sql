@@ -1,9 +1,9 @@
 
 with source as (
 
-    select * from {{ source('northwind', 'OrderDetails') }}
+    select * from {{ source('northwind', 'Order Details') }}
 )
 select 
     *,
-    CURRENT_TIMESTAMP() as IngestionTimestamp
+    CURRENT_TIMESTAMP as IngestionTimestamp
 from source

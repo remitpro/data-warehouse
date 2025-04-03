@@ -1,9 +1,5 @@
-
-with source as (
-
-    select * from {{ source('northwind', 'Categories') }}
-)
 select 
-    *,
-    CURRENT_TIMESTAMP() as ingestion_timestamp
-from source
+tb.*,
+CURRENT_TIMESTAMP as IngestionTimestamp
+
+from {{ source('northwind', 'Categories') }} tb

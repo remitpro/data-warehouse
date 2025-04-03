@@ -5,5 +5,5 @@ with source as (
 )
 select 
     *,
-    CURRENT_TIMESTAMP() as IngestionTimestamp
+    CURRENT_TIMESTAMP as IngestionTimestamp
 from source
