@@ -13,8 +13,6 @@ The dimensional model is implemented using DBT by:
 
 - Using DBT macros for reusable logic.
 
-![](./dwworksheet/salesModel.png)
-
 
 
 ## <a href="./dbtpipeline/index.html"  target="_blank"> Generating and Hosting DBT Documentation   </a>
