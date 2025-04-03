@@ -16,4 +16,3 @@ Building on the high-level model, a detailed dimensional model is developed. Thi
 - Ensuring normalization or denormalization based on performance requirements.
 
 
-![](./dwworksheet/Screenshot%202025-03-22%20125042.png)

@@ -15,4 +15,3 @@ The initial step involves designing a high-level dimensional model to represent 
 - Creating a star or snowflake schema as appropriate.
 
 
-![](./dwworksheet/BusMatrx.png)
